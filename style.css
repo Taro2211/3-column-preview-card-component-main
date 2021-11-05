@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: sans-serif, Arial;
+    background-color: hsl(0, 0%, 95%);
+}
+
+/*Main card*/
+.container {
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+section {
+    position: relative;
+    width: 33.33%;
+    height: 575px;
+    float: left;
+    padding: 50px;
+}
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+h1 {
+    font-family: 'Big shoulders Display';
+    font-size: 45px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+p {
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 30px;
+}
+button {
+    position: absolute;
+    bottom: 50px;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-family: 'Lexend Deca';
+    padding: 15px 40px;
+    background-color: hsl(0, 0%, 95%);
+}
+.sedan  button {
+    color: hsl(31, 77%, 52%);
+}
+.suv button {
+    color: hsl(184, 100%, 22%);
+}
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+h1:hover, p:hover {
+    cursor: default;
+}
+/*Active states*/
+button:hover {
+    background-color: inherit;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+/*Media query*/
+@media screen and (max-width: 1150px) {
+    .container {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 95%;
+    }
+    section {
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .container {
+        width: 75%;
+    }
+    section {
+        width: 100%;
+        height: 475px;
+        padding: 50px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .container {
+        width: 98%;
+    }
+}
